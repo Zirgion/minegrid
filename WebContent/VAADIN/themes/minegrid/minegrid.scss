@@ -1,0 +1,16 @@
+@import "../valo/valo.scss";
+
+@mixin minegrid {
+  @include valo;
+
+  body {
+	overflow: scroll;
+  }
+  .v-grid {
+	display: block;
+	margin: auto;
+  }
+  .v-grid-cell {
+	text-align: center;
+  }
+}

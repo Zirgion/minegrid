@@ -1,0 +1,1 @@
+$wnd.com_example_minegrid_widgetset_MinegridWidgetset.runAsyncCallback2('S9(1508,1,IHd);_.tc=function I7b(){iWb((!bWb&&(bWb=new nWb),bWb),this.a.d)};oBd(Oh)(2);\n//# sourceURL=com.example.minegrid.widgetset.MinegridWidgetset-2.js\n')
