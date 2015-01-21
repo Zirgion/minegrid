@@ -363,22 +363,22 @@ public class MineGenerator extends AbstractContainer implements
     public void mark(Row row, Integer column) {
         switch (row.getState(column)) {
         case MARKED_EMPTY:
-            mineCount--;
+            mineCount++;
             row.setState(column, Row.State.UNSEEN_EMPTY);
             super.fireItemSetChange();
             break;
         case MARKED_MINE:
-            mineCount--;
+            mineCount++;
             row.setState(column, Row.State.UNSEEN_MINE);
             super.fireItemSetChange();
             break;
         case UNSEEN_EMPTY:
-            mineCount++;
+            mineCount--;
             row.setState(column, Row.State.MARKED_EMPTY);
             super.fireItemSetChange();
             break;
         case UNSEEN_MINE:
-            mineCount++;
+            mineCount--;
             row.setState(column, Row.State.MARKED_MINE);
             super.fireItemSetChange();
             break;
